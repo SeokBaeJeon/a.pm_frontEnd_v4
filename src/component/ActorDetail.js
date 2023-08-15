@@ -9,6 +9,8 @@ const ActorDetail = () => {
   const [like, setLike] = useState(false);
   const [authenticated, setAuthenticated] = useState(false);
   const [schedule, setSchedule] = useState([]);
+  const [actorList, setActorList] = useState([]);
+  const tokenFromLocalStorage = localStorage.getItem('token');
 
   useEffect(() => {
     const fetchActorDetail = async () => {
@@ -44,16 +46,34 @@ const ActorDetail = () => {
     checkAuthentication();
   }, [actorId]);
 
-  const handleLikeClick = async () => {
-    if (!authenticated) {
-      console.log('로그인이 필요합니다.');
-      return;
-    }
-
+  const handleLikeClick = async (actorId) => {
     try {
-      const response = await axios.post(`/user/likeActor/${actorId}`);
-      if (response.status === 200 || response.status === 201) {
-        setLike(true);
+      if (!tokenFromLocalStorage) {
+        // 토큰이 없는 경우 로그인 페이지로 이동하거나, 알림 메시지를 표시할 수 있습니다.
+        alert('로그인이 필요합니다.');
+        return;
+      }
+  
+      const config = {
+        headers: {
+          'Authorization': `Bearer ${tokenFromLocalStorage}`,
+          'Content-Type': 'application/json'
+        }
+      };
+  
+      // 서버에 좋아요 업데이트 요청 보내기
+      const response = await axios.post(`/user/likeActor/${actorId}`, null, config);
+      // 서버 응답 확인
+      if (response.status === 200) {
+        // 서버 응답이 성공한 경우, 해당 배우의 isLiked 값을 업데이트
+        setActorList(prevActorList => {
+          return prevActorList.map(actor => {
+            if (actor.actorId === actorId) {
+              return { ...actor, isLiked: !actor.isLiked }; // 상태 반전
+            }
+            return actor;
+          });
+        });
       }
     } catch (error) {
       console.error('Error liking actor:', error);
@@ -61,15 +81,31 @@ const ActorDetail = () => {
   };
 
   const handleCancelLikeClick = async () => {
-    if (!authenticated) {
-      console.log('로그인이 필요합니다.');
-      return;
-    }
-
     try {
-      const response = await axios.delete(`/user/likeActor/${actorId}`);
+      if (!tokenFromLocalStorage) {
+        // 토큰이 없는 경우 로그인 페이지로 이동하거나, 알림 메시지를 표시할 수 있습니다.
+        alert('로그인이 필요합니다.');
+        return;
+      }
+  
+      const config = {
+        headers: {
+          'Authorization': `Bearer ${tokenFromLocalStorage}`,
+          'Content-Type': 'application/json'
+        }
+      };
+
+    
+      const response = await axios.delete(`/user/likeActor/${actorId}`, null, config);
       if (response.status === 200) {
-        setLike(false);
+        setActorList(prevActorList => {
+          return prevActorList.map(actor => {
+            if (actor.actorId === actorId) {
+              return { ...actor, isLiked: !actor.isLiked }; // 상태 반전
+            }
+            return actor;
+          });
+        });
       }
     } catch (error) {
       console.error('Error cancelling like:', error);

@@ -63,7 +63,7 @@ function Jayu() {
       });
 
       console.log('Review submitted:', selectedSeatId, 'Rating:', rating, 'Comment:', comment);
-      
+
       setPopupOpen(false); // 팝업 닫기
     } catch (error) {
       console.error('Error submitting review:', error);
@@ -268,7 +268,7 @@ function Jayu() {
                             <div id="seat"></div>
                             {/* 가상 좌석  끝*/}
                             {/* 좌석표에 열 표시해주는 코드 */}
-                            {seats.map((seat) => (
+                        {seats.map((seat) => (
                             <div
                                 className={`seats ${getSeatColorClass(seat.rating)}`}
                                 onClick={() => handleSeatClick(seat.id)}
@@ -287,7 +287,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17027">
+                                <div id="seat" className="real no_review" pk="17027">
                                     <p>5</p>
                                 </div>
                             </div>
@@ -297,7 +297,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17028">
+                                <div id="seat" className="real no_review" pk="17028">
                                     <p>6</p>
                                 </div>
                             </div>
@@ -318,7 +318,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17032">
+                                <div id="seat" className="real no_review" pk="17032">
                                     <p>4</p>
                                 </div>
                             </div>
@@ -328,7 +328,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17033">
+                                <div id="seat" className="real no_review" pk="17033">
                                     <p>5</p>
                                 </div>
                             </div>
@@ -338,7 +338,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17034">
+                                <div id="seat" className="real no_review" pk="17034">
                                     <p>6</p>
                                 </div>
                             </div>
@@ -355,7 +355,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17036">
+                                <div id="seat" className="real no_review" pk="17036">
                                     <p>1</p>
                                 </div>
                             </div>
@@ -365,7 +365,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17037">
+                                <div id="seat" className="real no_review" pk="17037">
                                     <p>2</p>
                                 </div>
                             </div>
@@ -375,7 +375,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17038">
+                                <div id="seat" className="real no_review" pk="17038">
                                     <p>3</p>
                                 </div>
                             </div>
@@ -385,7 +385,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17039">
+                                <div id="seat" className="real no_review" pk="17039">
                                     <p>4</p>
                                 </div>
                             </div>
@@ -395,7 +395,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17040">
+                                <div id="seat" className="real no_review" pk="17040">
                                     <p>5</p>
                                 </div>
                             </div>
@@ -405,7 +405,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17041">
+                                <div id="seat" className="real no_review" pk="17041">
                                     <p>6</p>
                                 </div>
                             </div>
@@ -420,7 +420,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17042">
+                                <div id="seat" className="real no_review" pk="17042">
                                     <p>1</p>
                                 </div>
                             </div>
@@ -430,7 +430,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17043">
+                                <div id="seat" className="real no_review" pk="17043">
                                     <p>2</p>
                                 </div>
                             </div>
@@ -440,7 +440,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17044">
+                                <div id="seat" className="real no_review" pk="17044">
                                     <p>3</p>
                                 </div>
                             </div>
@@ -450,7 +450,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17045">
+                                <div id="seat" className="real no_review" pk="17045">
                                     <p>4</p>
                                 </div>
                             </div>
@@ -460,7 +460,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17046">
+                                <div id="seat" className="real no_review" pk="17046">
                                     <p>5</p>
                                 </div>
                             </div>
@@ -470,139 +470,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17047">
-                                    <p>6</p>
-                                </div>
-                            </div>
-                            {/* 실제 좌석 끝 */}
-                            {/* 가상 좌석 */}
-                            {/* 가상 좌석  끝*/}
-                            <div id="seat"></div>
-                            {/* 가상 좌석  끝*/}
-                            {/* 좌석 끝 */}
-                        </div>
-                        <div className="row">
-                            {/* 좌석 */}
-                            {/*seeyatheater*/}
-                            {/* 좌석표에 열 표시해주는 코드 */}
-                            <div className="seats">
-                                {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17049">
-                                    <p>1</p>
-                                </div>
-                            </div>
-                            {/* 실제 좌석 끝 */}
-                            {/* 가상 좌석 */}
-                            {/* 가상 좌석  끝*/}
-                            {/* 좌석표에 열 표시해주는 코드 */}
-                            <div className="seats">
-                                {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17050">
-                                    <p>2</p>
-                                </div>
-                            </div>
-                            {/* 실제 좌석 끝 */}
-                            {/* 가상 좌석 */}
-                            {/* 가상 좌석  끝*/}
-                            {/* 좌석표에 열 표시해주는 코드 */}
-                            <div className="seats">
-                                {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17051">
-                                    <p>3</p>
-                                </div>
-                            </div>
-                            {/* 실제 좌석 끝 */}
-                            {/* 가상 좌석 */}
-                            {/* 가상 좌석  끝*/}
-                            {/* 좌석표에 열 표시해주는 코드 */}
-                            <div className="seats">
-                                {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17052">
-                                    <p>4</p>
-                                </div>
-                            </div>
-                            {/* 실제 좌석 끝 */}
-                            {/* 가상 좌석 */}
-                            {/* 가상 좌석  끝*/}
-                            {/* 좌석표에 열 표시해주는 코드 */}
-                            <div className="seats">
-                                {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17053">
-                                    <p>5</p>
-                                </div>
-                            </div>
-                            {/* 실제 좌석 끝 */}
-                            {/* 가상 좌석 */}
-                            {/* 가상 좌석  끝*/}
-                            {/* 좌석표에 열 표시해주는 코드 */}
-                            <div className="seats">
-                                {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17054">
-                                    <p>6</p>
-                                </div>
-                            </div>
-                            {/* 실제 좌석 끝 */}
-                            {/* 가상 좌석 */}
-                            {/* 가상 좌석  끝*/}
-                            {/* 좌석 끝 */}
-                        </div>
-                        <div className="row">
-                            {/* 좌석 */}
-                            {/*seeyatheater*/}
-                            {/* 좌석표에 열 표시해주는 코드 */}
-                            <div className="seats">
-                                {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17055">
-                                    <p>1</p>
-                                </div>
-                            </div>
-                            {/* 실제 좌석 끝 */}
-                            {/* 가상 좌석 */}
-                            {/* 가상 좌석  끝*/}
-                            {/* 좌석표에 열 표시해주는 코드 */}
-                            <div className="seats">
-                                {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17056">
-                                    <p>2</p>
-                                </div>
-                            </div>
-                            {/* 실제 좌석 끝 */}
-                            {/* 가상 좌석 */}
-                            {/* 가상 좌석  끝*/}
-                            {/* 좌석표에 열 표시해주는 코드 */}
-                            <div className="seats">
-                                {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17057">
-                                    <p>3</p>
-                                </div>
-                            </div>
-                            {/* 실제 좌석 끝 */}
-                            {/* 가상 좌석 */}
-                            {/* 가상 좌석  끝*/}
-                            {/* 좌석표에 열 표시해주는 코드 */}
-                            <div className="seats">
-                                {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17058">
-                                    <p>4</p>
-                                </div>
-                            </div>
-                            {/* 실제 좌석 끝 */}
-                            {/* 가상 좌석 */}
-                            {/* 가상 좌석  끝*/}
-                            {/* 좌석표에 열 표시해주는 코드 */}
-                            <div className="seats">
-                                {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17059">
-                                    <p>5</p>
-                                </div>
-                            </div>
-                            {/* 실제 좌석 끝 */}
-                            {/* 가상 좌석 */}
-                            {/* 가상 좌석  끝*/}
-                            {/* 좌석표에 열 표시해주는 코드 */}
-                            <div className="seats">
-                                {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17060">
+                                <div id="seat" className="real no_review" pk="17047">
                                     <p>6</p>
                                 </div>
                             </div>
@@ -619,7 +487,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17062">
+                                <div id="seat" className="real no_review" pk="17049">
                                     <p>1</p>
                                 </div>
                             </div>
@@ -629,7 +497,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17063">
+                                <div id="seat" className="real no_review" pk="17050">
                                     <p>2</p>
                                 </div>
                             </div>
@@ -639,7 +507,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17064">
+                                <div id="seat" className="real no_review" pk="17051">
                                     <p>3</p>
                                 </div>
                             </div>
@@ -649,7 +517,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17065">
+                                <div id="seat" className="real no_review" pk="17052">
                                     <p>4</p>
                                 </div>
                             </div>
@@ -659,7 +527,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17066">
+                                <div id="seat" className="real no_review" pk="17053">
                                     <p>5</p>
                                 </div>
                             </div>
@@ -669,7 +537,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17067">
+                                <div id="seat" className="real no_review" pk="17054">
                                     <p>6</p>
                                 </div>
                             </div>
@@ -684,7 +552,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17068">
+                                <div id="seat" className="real no_review" pk="17055">
                                     <p>1</p>
                                 </div>
                             </div>
@@ -694,7 +562,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17069">
+                                <div id="seat" className="real no_review" pk="17056">
                                     <p>2</p>
                                 </div>
                             </div>
@@ -704,7 +572,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17070">
+                                <div id="seat" className="real no_review" pk="17057">
                                     <p>3</p>
                                 </div>
                             </div>
@@ -714,7 +582,139 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17071">
+                                <div id="seat" className="real no_review" pk="17058">
+                                    <p>4</p>
+                                </div>
+                            </div>
+                            {/* 실제 좌석 끝 */}
+                            {/* 가상 좌석 */}
+                            {/* 가상 좌석  끝*/}
+                            {/* 좌석표에 열 표시해주는 코드 */}
+                            <div className="seats">
+                                {/* 일반 좌석 */}
+                                <div id="seat" className="real no_review" pk="17059">
+                                    <p>5</p>
+                                </div>
+                            </div>
+                            {/* 실제 좌석 끝 */}
+                            {/* 가상 좌석 */}
+                            {/* 가상 좌석  끝*/}
+                            {/* 좌석표에 열 표시해주는 코드 */}
+                            <div className="seats">
+                                {/* 일반 좌석 */}
+                                <div id="seat" className="real no_review" pk="17060">
+                                    <p>6</p>
+                                </div>
+                            </div>
+                            {/* 실제 좌석 끝 */}
+                            {/* 가상 좌석 */}
+                            {/* 가상 좌석  끝*/}
+                            <div id="seat"></div>
+                            {/* 가상 좌석  끝*/}
+                            {/* 좌석 끝 */}
+                        </div>
+                        <div className="row">
+                            {/* 좌석 */}
+                            {/*seeyatheater*/}
+                            {/* 좌석표에 열 표시해주는 코드 */}
+                            <div className="seats">
+                                {/* 일반 좌석 */}
+                                <div id="seat" className="real no_review" pk="17062">
+                                    <p>1</p>
+                                </div>
+                            </div>
+                            {/* 실제 좌석 끝 */}
+                            {/* 가상 좌석 */}
+                            {/* 가상 좌석  끝*/}
+                            {/* 좌석표에 열 표시해주는 코드 */}
+                            <div className="seats">
+                                {/* 일반 좌석 */}
+                                <div id="seat" className="real no_review" pk="17063">
+                                    <p>2</p>
+                                </div>
+                            </div>
+                            {/* 실제 좌석 끝 */}
+                            {/* 가상 좌석 */}
+                            {/* 가상 좌석  끝*/}
+                            {/* 좌석표에 열 표시해주는 코드 */}
+                            <div className="seats">
+                                {/* 일반 좌석 */}
+                                <div id="seat" className="real no_review" pk="17064">
+                                    <p>3</p>
+                                </div>
+                            </div>
+                            {/* 실제 좌석 끝 */}
+                            {/* 가상 좌석 */}
+                            {/* 가상 좌석  끝*/}
+                            {/* 좌석표에 열 표시해주는 코드 */}
+                            <div className="seats">
+                                {/* 일반 좌석 */}
+                                <div id="seat" className="real no_review" pk="17065">
+                                    <p>4</p>
+                                </div>
+                            </div>
+                            {/* 실제 좌석 끝 */}
+                            {/* 가상 좌석 */}
+                            {/* 가상 좌석  끝*/}
+                            {/* 좌석표에 열 표시해주는 코드 */}
+                            <div className="seats">
+                                {/* 일반 좌석 */}
+                                <div id="seat" className="real no_review" pk="17066">
+                                    <p>5</p>
+                                </div>
+                            </div>
+                            {/* 실제 좌석 끝 */}
+                            {/* 가상 좌석 */}
+                            {/* 가상 좌석  끝*/}
+                            {/* 좌석표에 열 표시해주는 코드 */}
+                            <div className="seats">
+                                {/* 일반 좌석 */}
+                                <div id="seat" className="real no_review" pk="17067">
+                                    <p>6</p>
+                                </div>
+                            </div>
+                            {/* 실제 좌석 끝 */}
+                            {/* 가상 좌석 */}
+                            {/* 가상 좌석  끝*/}
+                            {/* 좌석 끝 */}
+                        </div>
+                        <div className="row">
+                            {/* 좌석 */}
+                            {/*seeyatheater*/}
+                            {/* 좌석표에 열 표시해주는 코드 */}
+                            <div className="seats">
+                                {/* 일반 좌석 */}
+                                <div id="seat" className="real no_review" pk="17068">
+                                    <p>1</p>
+                                </div>
+                            </div>
+                            {/* 실제 좌석 끝 */}
+                            {/* 가상 좌석 */}
+                            {/* 가상 좌석  끝*/}
+                            {/* 좌석표에 열 표시해주는 코드 */}
+                            <div className="seats">
+                                {/* 일반 좌석 */}
+                                <div id="seat" className="real no_review" pk="17069">
+                                    <p>2</p>
+                                </div>
+                            </div>
+                            {/* 실제 좌석 끝 */}
+                            {/* 가상 좌석 */}
+                            {/* 가상 좌석  끝*/}
+                            {/* 좌석표에 열 표시해주는 코드 */}
+                            <div className="seats">
+                                {/* 일반 좌석 */}
+                                <div id="seat" className="real no_review" pk="17070">
+                                    <p>3</p>
+                                </div>
+                            </div>
+                            {/* 실제 좌석 끝 */}
+                            {/* 가상 좌석 */}
+                            {/* 가상 좌석  끝*/}
+                            {/* 좌석표에 열 표시해주는 코드 */}
+                            <div className="seats">
+                                {/* 일반 좌석 */}
+                                <div id="seat" className="real no_review" pk="17071">
                                     <p>4</p>
                                 </div>
                             </div>
@@ -734,7 +734,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17073">
+                                <div id="seat" className="real no_review" pk="17073">
                                     <p>6</p>
                                 </div>
                             </div>
@@ -751,7 +751,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17075">
+                                <div id="seat" className="real no_review" pk="17075">
                                     <p>1</p>
                                 </div>
                             </div>
@@ -761,7 +761,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real orange" pk="17076">
+                                <div id="seat" className="real no_review" pk="17076">
                                     <p>2</p>
                                 </div>
                             </div>
@@ -771,7 +771,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17077">
+                                <div id="seat" className="real no_review" pk="17077">
                                     <p>3</p>
                                 </div>
                             </div>
@@ -781,7 +781,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real orange" pk="17078">
+                                <div id="seat" className="real no_review" pk="17078">
                                     <p>4</p>
                                 </div>
                             </div>
@@ -791,7 +791,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real orange" pk="17079">
+                                <div id="seat" className="real no_review" pk="17079">
                                     <p>5</p>
                                 </div>
                             </div>
@@ -801,7 +801,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17080">
+                                <div id="seat" className="real no_review" pk="17080">
                                     <p>6</p>
                                 </div>
                             </div>
@@ -826,7 +826,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17082">
+                                <div id="seat" className="real no_review" pk="17082">
                                     <p>2</p>
                                 </div>
                             </div>
@@ -836,7 +836,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17083">
+                                <div id="seat" className="real no_review" pk="17083">
                                     <p>3</p>
                                 </div>
                             </div>
@@ -866,7 +866,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17086">
+                                <div id="seat" className="real no_review" pk="17086">
                                     <p>6</p>
                                 </div>
                             </div>
@@ -923,7 +923,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real red" pk="17092">
+                                <div id="seat" className="real no_review" pk="17092">
                                     <p>5</p>
                                 </div>
                             </div>
@@ -933,7 +933,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17093">
+                                <div id="seat" className="real no_review" pk="17093">
                                     <p>6</p>
                                 </div>
                             </div>
@@ -968,7 +968,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real orange" pk="17096">
+                                <div id="seat" className="real no_review" pk="17096">
                                     <p>3</p>
                                 </div>
                             </div>
@@ -988,7 +988,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17098">
+                                <div id="seat" className="real no_review" pk="17098">
                                     <p>5</p>
                                 </div>
                             </div>
@@ -998,7 +998,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17099">
+                                <div id="seat" className="real no_review" pk="17099">
                                     <p>6</p>
                                 </div>
                             </div>
@@ -1020,7 +1020,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17101">
+                                <div id="seat" className="real no_review" pk="17101">
                                     <p>7</p>
                                 </div>
                             </div>
@@ -1030,7 +1030,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17102">
+                                <div id="seat" className="real no_review" pk="17102">
                                     <p>8</p>
                                 </div>
                             </div>
@@ -1040,7 +1040,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17103">
+                                <div id="seat" className="real no_review" pk="17103">
                                     <p>9</p>
                                 </div>
                             </div>
@@ -1050,7 +1050,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17104">
+                                <div id="seat" className="real no_review" pk="17104">
                                     <p>10</p>
                                 </div>
                             </div>
@@ -1060,7 +1060,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17105">
+                                <div id="seat" className="real no_review" pk="17105">
                                     <p>11</p>
                                 </div>
                             </div>
@@ -1070,7 +1070,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17106">
+                                <div id="seat" className="real no_review" pk="17106">
                                     <p>12</p>
                                 </div>
                             </div>
@@ -1080,7 +1080,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17107">
+                                <div id="seat" className="real no_review" pk="17107">
                                     <p>13</p>
                                 </div>
                             </div>
@@ -1095,7 +1095,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17108">
+                                <div id="seat" className="real no_review" pk="17108">
                                     <p>7</p>
                                 </div>
                             </div>
@@ -1105,7 +1105,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17109">
+                                <div id="seat" className="real no_review" pk="17109">
                                     <p>8</p>
                                 </div>
                             </div>
@@ -1125,7 +1125,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17111">
+                                <div id="seat" className="real no_review" pk="17111">
                                     <p>10</p>
                                 </div>
                             </div>
@@ -1135,7 +1135,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17112">
+                                <div id="seat" className="real no_review" pk="17112">
                                     <p>11</p>
                                 </div>
                             </div>
@@ -1145,7 +1145,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17113">
+                                <div id="seat" className="real no_review" pk="17113">
                                     <p>12</p>
                                 </div>
                             </div>
@@ -1155,7 +1155,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17114">
+                                <div id="seat" className="real no_review" pk="17114">
                                     <p>13</p>
                                 </div>
                             </div>
@@ -1165,7 +1165,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17115">
+                                <div id="seat" className="real no_review" pk="17115">
                                     <p>14</p>
                                 </div>
                             </div>
@@ -1180,7 +1180,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17116">
+                                <div id="seat" className="real no_review" pk="17116">
                                     <p>7</p>
                                 </div>
                             </div>
@@ -1190,7 +1190,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17117">
+                                <div id="seat" className="real no_review" pk="17117">
                                     <p>8</p>
                                 </div>
                             </div>
@@ -1200,7 +1200,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17118">
+                                <div id="seat" className="real no_review" pk="17118">
                                     <p>9</p>
                                 </div>
                             </div>
@@ -1210,7 +1210,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17119">
+                                <div id="seat" className="real no_review" pk="17119">
                                     <p>10</p>
                                 </div>
                             </div>
@@ -1220,7 +1220,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17120">
+                                <div id="seat" className="real no_review" pk="17120">
                                     <p>11</p>
                                 </div>
                             </div>
@@ -1230,7 +1230,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17121">
+                                <div id="seat" className="real no_review" pk="17121">
                                     <p>12</p>
                                 </div>
                             </div>
@@ -1240,7 +1240,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17122">
+                                <div id="seat" className="real no_review" pk="17122">
                                     <p>13</p>
                                 </div>
                             </div>
@@ -1255,7 +1255,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17123">
+                                <div id="seat" className="real no_review" pk="17123">
                                     <p>7</p>
                                 </div>
                             </div>
@@ -1265,7 +1265,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17124">
+                                <div id="seat" className="real no_review" pk="17124">
                                     <p>8</p>
                                 </div>
                             </div>
@@ -1275,7 +1275,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17125">
+                                <div id="seat" className="real no_review" pk="17125">
                                     <p>9</p>
                                 </div>
                             </div>
@@ -1285,7 +1285,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17126">
+                                <div id="seat" className="real no_review" pk="17126">
                                     <p>10</p>
                                 </div>
                             </div>
@@ -1295,7 +1295,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17127">
+                                <div id="seat" className="real no_review" pk="17127">
                                     <p>11</p>
                                 </div>
                             </div>
@@ -1305,7 +1305,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17128">
+                                <div id="seat" className="real no_review" pk="17128">
                                     <p>12</p>
                                 </div>
                             </div>
@@ -1315,7 +1315,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17129">
+                                <div id="seat" className="real no_review" pk="17129">
                                     <p>13</p>
                                 </div>
                             </div>
@@ -1325,7 +1325,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17130">
+                                <div id="seat" className="real no_review" pk="17130">
                                     <p>14</p>
                                 </div>
                             </div>
@@ -1340,7 +1340,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17131">
+                                <div id="seat" className="real no_review" pk="17131">
                                     <p>7</p>
                                 </div>
                             </div>
@@ -1350,7 +1350,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17132">
+                                <div id="seat" className="real no_review" pk="17132">
                                     <p>8</p>
                                 </div>
                             </div>
@@ -1360,7 +1360,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17133">
+                                <div id="seat" className="real no_review" pk="17133">
                                     <p>9</p>
                                 </div>
                             </div>
@@ -1370,7 +1370,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17134">
+                                <div id="seat" className="real no_review" pk="17134">
                                     <p>10</p>
                                 </div>
                             </div>
@@ -1380,7 +1380,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17135">
+                                <div id="seat" className="real no_review" pk="17135">
                                     <p>11</p>
                                 </div>
                             </div>
@@ -1390,7 +1390,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17136">
+                                <div id="seat" className="real no_review" pk="17136">
                                     <p>12</p>
                                 </div>
                             </div>
@@ -1400,7 +1400,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17137">
+                                <div id="seat" className="real no_review" pk="17137">
                                     <p>13</p>
                                 </div>
                             </div>
@@ -1415,7 +1415,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17138">
+                                <div id="seat" className="real no_review" pk="17138">
                                     <p>7</p>
                                 </div>
                             </div>
@@ -1425,7 +1425,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real orange" pk="17139">
+                                <div id="seat" className="real no_review" pk="17139">
                                     <p>8</p>
                                 </div>
                             </div>
@@ -1435,7 +1435,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17140">
+                                <div id="seat" className="real no_review" pk="17140">
                                     <p>9</p>
                                 </div>
                             </div>
@@ -1445,7 +1445,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17141">
+                                <div id="seat" className="real no_review" pk="17141">
                                     <p>10</p>
                                 </div>
                             </div>
@@ -1455,7 +1455,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17142">
+                                <div id="seat" className="real no_review" pk="17142">
                                     <p>11</p>
                                 </div>
                             </div>
@@ -1465,7 +1465,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17143">
+                                <div id="seat" className="real no_review" pk="17143">
                                     <p>12</p>
                                 </div>
                             </div>
@@ -1475,7 +1475,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17144">
+                                <div id="seat" className="real no_review" pk="17144">
                                     <p>13</p>
                                 </div>
                             </div>
@@ -1485,7 +1485,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17145">
+                                <div id="seat" className="real no_review" pk="17145">
                                     <p>14</p>
                                 </div>
                             </div>
@@ -1500,7 +1500,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17146">
+                                <div id="seat" className="real no_review" pk="17146">
                                     <p>7</p>
                                 </div>
                             </div>
@@ -1510,7 +1510,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17147">
+                                <div id="seat" className="real no_review" pk="17147">
                                     <p>8</p>
                                 </div>
                             </div>
@@ -1520,7 +1520,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real orange" pk="17148">
+                                <div id="seat" className="real no_review" pk="17148">
                                     <p>9</p>
                                 </div>
                             </div>
@@ -1530,7 +1530,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17149">
+                                <div id="seat" className="real no_review" pk="17149">
                                     <p>10</p>
                                 </div>
                             </div>
@@ -1540,7 +1540,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17150">
+                                <div id="seat" className="real no_review" pk="17150">
                                     <p>11</p>
                                 </div>
                             </div>
@@ -1550,7 +1550,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17151">
+                                <div id="seat" className="real no_review" pk="17151">
                                     <p>12</p>
                                 </div>
                             </div>
@@ -1560,7 +1560,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17152">
+                                <div id="seat" className="real no_review" pk="17152">
                                     <p>13</p>
                                 </div>
                             </div>
@@ -1575,7 +1575,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real orange" pk="17153">
+                                <div id="seat" className="real no_review" pk="17153">
                                     <p>7</p>
                                 </div>
                             </div>
@@ -1585,7 +1585,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17154">
+                                <div id="seat" className="real no_review" pk="17154">
                                     <p>8</p>
                                 </div>
                             </div>
@@ -1595,7 +1595,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17155">
+                                <div id="seat" className="real no_review" pk="17155">
                                     <p>9</p>
                                 </div>
                             </div>
@@ -1605,7 +1605,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17156">
+                                <div id="seat" className="real no_review" pk="17156">
                                     <p>10</p>
                                 </div>
                             </div>
@@ -1615,7 +1615,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17157">
+                                <div id="seat" className="real no_review" pk="17157">
                                     <p>11</p>
                                 </div>
                             </div>
@@ -1625,7 +1625,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17158">
+                                <div id="seat" className="real no_review" pk="17158">
                                     <p>12</p>
                                 </div>
                             </div>
@@ -1635,7 +1635,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17159">
+                                <div id="seat" className="real no_review" pk="17159">
                                     <p>13</p>
                                 </div>
                             </div>
@@ -1645,7 +1645,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17160">
+                                <div id="seat" className="real no_review" pk="17160">
                                     <p>14</p>
                                 </div>
                             </div>
@@ -1660,7 +1660,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17161">
+                                <div id="seat" className="real no_review" pk="17161">
                                     <p>7</p>
                                 </div>
                             </div>
@@ -1670,7 +1670,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17162">
+                                <div id="seat" className="real no_review" pk="17162">
                                     <p>8</p>
                                 </div>
                             </div>
@@ -1680,7 +1680,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17163">
+                                <div id="seat" className="real no_review" pk="17163">
                                     <p>9</p>
                                 </div>
                             </div>
@@ -1690,7 +1690,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17164">
+                                <div id="seat" className="real no_review" pk="17164">
                                     <p>10</p>
                                 </div>
                             </div>
@@ -1700,7 +1700,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17165">
+                                <div id="seat" className="real no_review" pk="17165">
                                     <p>11</p>
                                 </div>
                             </div>
@@ -1720,7 +1720,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real orange" pk="17167">
+                                <div id="seat" className="real no_review" pk="17167">
                                     <p>13</p>
                                 </div>
                             </div>
@@ -1735,7 +1735,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17168">
+                                <div id="seat" className="real no_review" pk="17168">
                                     <p>7</p>
                                 </div>
                             </div>
@@ -1745,7 +1745,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17169">
+                                <div id="seat" className="real no_review" pk="17169">
                                     <p>8</p>
                                 </div>
                             </div>
@@ -1765,7 +1765,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17171">
+                                <div id="seat" className="real no_review" pk="17171">
                                     <p>10</p>
                                 </div>
                             </div>
@@ -1775,7 +1775,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real orange" pk="17172">
+                                <div id="seat" className="real no_review" pk="17172">
                                     <p>11</p>
                                 </div>
                             </div>
@@ -1805,7 +1805,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17175">
+                                <div id="seat" className="real no_review" pk="17175">
                                     <p>14</p>
                                 </div>
                             </div>
@@ -1820,7 +1820,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real orange" pk="17176">
+                                <div id="seat" className="real no_review" pk="17176">
                                     <p>7</p>
                                 </div>
                             </div>
@@ -1830,7 +1830,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17177">
+                                <div id="seat" className="real no_review" pk="17177">
                                     <p>8</p>
                                 </div>
                             </div>
@@ -1850,7 +1850,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17179">
+                                <div id="seat" className="real no_review" pk="17179">
                                     <p>10</p>
                                 </div>
                             </div>
@@ -1880,7 +1880,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17182">
+                                <div id="seat" className="real no_review" pk="17182">
                                     <p>13</p>
                                 </div>
                             </div>
@@ -1925,7 +1925,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17186">
+                                <div id="seat" className="real no_review" pk="17186">
                                     <p>10</p>
                                 </div>
                             </div>
@@ -1985,7 +1985,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17191">
+                                <div id="seat" className="real no_review" pk="17191">
                                     <p>14</p>
                                 </div>
                             </div>
@@ -1995,7 +1995,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17192">
+                                <div id="seat" className="real no_review" pk="17192">
                                     <p>15</p>
                                 </div>
                             </div>
@@ -2005,7 +2005,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17193">
+                                <div id="seat" className="real no_review" pk="17193">
                                     <p>16</p>
                                 </div>
                             </div>
@@ -2015,7 +2015,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17194">
+                                <div id="seat" className="real no_review" pk="17194">
                                     <p>17</p>
                                 </div>
                             </div>
@@ -2025,7 +2025,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17195">
+                                <div id="seat" className="real no_review" pk="17195">
                                     <p>18</p>
                                 </div>
                             </div>
@@ -2035,7 +2035,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real orange" pk="17196">
+                                <div id="seat" className="real no_review" pk="17196">
                                     <p>19</p>
                                 </div>
                             </div>
@@ -2054,7 +2054,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17199">
+                                <div id="seat" className="real no_review" pk="17199">
                                     <p>15</p>
                                 </div>
                             </div>
@@ -2064,7 +2064,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17200">
+                                <div id="seat" className="real no_review" pk="17200">
                                     <p>16</p>
                                 </div>
                             </div>
@@ -2074,7 +2074,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17201">
+                                <div id="seat" className="real no_review" pk="17201">
                                     <p>17</p>
                                 </div>
                             </div>
@@ -2084,7 +2084,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17202">
+                                <div id="seat" className="real no_review" pk="17202">
                                     <p>18</p>
                                 </div>
                             </div>
@@ -2094,7 +2094,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17203">
+                                <div id="seat" className="real no_review" pk="17203">
                                     <p>19</p>
                                 </div>
                             </div>
@@ -2121,7 +2121,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17206">
+                                <div id="seat" className="real no_review" pk="17206">
                                     <p>14</p>
                                 </div>
                             </div>
@@ -2131,7 +2131,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17207">
+                                <div id="seat" className="real no_review" pk="17207">
                                     <p>15</p>
                                 </div>
                             </div>
@@ -2141,7 +2141,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17208">
+                                <div id="seat" className="real no_review" pk="17208">
                                     <p>16</p>
                                 </div>
                             </div>
@@ -2151,7 +2151,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17209">
+                                <div id="seat" className="real no_review" pk="17209">
                                     <p>17</p>
                                 </div>
                             </div>
@@ -2161,7 +2161,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17210">
+                                <div id="seat" className="real no_review" pk="17210">
                                     <p>18</p>
                                 </div>
                             </div>
@@ -2171,7 +2171,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17211">
+                                <div id="seat" className="real no_review" pk="17211">
                                     <p>19</p>
                                 </div>
                             </div>
@@ -2198,7 +2198,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17214">
+                                <div id="seat" className="real no_review" pk="17214">
                                     <p>15</p>
                                 </div>
                             </div>
@@ -2208,7 +2208,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17215">
+                                <div id="seat" className="real no_review" pk="17215">
                                     <p>16</p>
                                 </div>
                             </div>
@@ -2218,7 +2218,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17216">
+                                <div id="seat" className="real no_review" pk="17216">
                                     <p>17</p>
                                 </div>
                             </div>
@@ -2228,7 +2228,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17217">
+                                <div id="seat" className="real no_review" pk="17217">
                                     <p>18</p>
                                 </div>
                             </div>
@@ -2238,7 +2238,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17218">
+                                <div id="seat" className="real no_review" pk="17218">
                                     <p>19</p>
                                 </div>
                             </div>
@@ -2248,7 +2248,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17219">
+                                <div id="seat" className="real no_review" pk="17219">
                                     <p>20</p>
                                 </div>
                             </div>
@@ -2258,7 +2258,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real orange" pk="17220">
+                                <div id="seat" className="real no_review" pk="17220">
                                     <p>21</p>
                                 </div>
                             </div>
@@ -2273,7 +2273,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17221">
+                                <div id="seat" className="real no_review" pk="17221">
                                     <p>14</p>
                                 </div>
                             </div>
@@ -2283,7 +2283,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17222">
+                                <div id="seat" className="real no_review" pk="17222">
                                     <p>15</p>
                                 </div>
                             </div>
@@ -2293,7 +2293,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17223">
+                                <div id="seat" className="real no_review" pk="17223">
                                     <p>16</p>
                                 </div>
                             </div>
@@ -2313,7 +2313,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17225">
+                                <div id="seat" className="real no_review" pk="17225">
                                     <p>18</p>
                                 </div>
                             </div>
@@ -2323,7 +2323,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17226">
+                                <div id="seat" className="real no_review" pk="17226">
                                     <p>19</p>
                                 </div>
                             </div>
@@ -2333,7 +2333,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17227">
+                                <div id="seat" className="real no_review" pk="17227">
                                     <p>20</p>
                                 </div>
                             </div>
@@ -2350,7 +2350,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17229">
+                                <div id="seat" className="real no_review" pk="17229">
                                     <p>15</p>
                                 </div>
                             </div>
@@ -2370,7 +2370,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17231">
+                                <div id="seat" className="real no_review" pk="17231">
                                     <p>17</p>
                                 </div>
                             </div>
@@ -2390,7 +2390,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17233">
+                                <div id="seat" className="real no_review" pk="17233">
                                     <p>19</p>
                                 </div>
                             </div>
@@ -2400,7 +2400,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17234">
+                                <div id="seat" className="real no_review" pk="17234">
                                     <p>20</p>
                                 </div>
                             </div>
@@ -2417,7 +2417,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17236">
+                                <div id="seat" className="real no_review" pk="17236">
                                     <p>14</p>
                                 </div>
                             </div>
@@ -2427,7 +2427,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17237">
+                                <div id="seat" className="real no_review" pk="17237">
                                     <p>15</p>
                                 </div>
                             </div>
@@ -2437,7 +2437,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17238">
+                                <div id="seat" className="real no_review" pk="17238">
                                     <p>16</p>
                                 </div>
                             </div>
@@ -2447,7 +2447,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17239">
+                                <div id="seat" className="real no_review" pk="17239">
                                     <p>17</p>
                                 </div>
                             </div>
@@ -2457,7 +2457,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17240">
+                                <div id="seat" className="real no_review" pk="17240">
                                     <p>18</p>
                                 </div>
                             </div>
@@ -2467,7 +2467,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real yellow" pk="17241">
+                                <div id="seat" className="real no_review" pk="17241">
                                     <p>19</p>
                                 </div>
                             </div>
@@ -2477,7 +2477,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17242">
+                                <div id="seat" className="real no_review" pk="17242">
                                     <p>20</p>
                                 </div>
                             </div>
@@ -2504,7 +2504,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17245">
+                                <div id="seat" className="real no_review" pk="17245">
                                     <p>16</p>
                                 </div>
                             </div>
@@ -2514,7 +2514,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17246">
+                                <div id="seat" className="real no_review" pk="17246">
                                     <p>17</p>
                                 </div>
                             </div>
@@ -2544,7 +2544,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17249">
+                                <div id="seat" className="real no_review" pk="17249">
                                     <p>20</p>
                                 </div>
                             </div>
@@ -2561,7 +2561,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real green" pk="17251">
+                                <div id="seat" className="real no_review" pk="17251">
                                     <p>14</p>
                                 </div>
                             </div>
@@ -2601,7 +2601,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17255">
+                                <div id="seat" className="real no_review" pk="17255">
                                     <p>18</p>
                                 </div>
                             </div>
@@ -2611,7 +2611,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real orange" pk="17256">
+                                <div id="seat" className="real no_review" pk="17256">
                                     <p>19</p>
                                 </div>
                             </div>
@@ -2630,7 +2630,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17259">
+                                <div id="seat" className="real no_review" pk="17259">
                                     <p>15</p>
                                 </div>
                             </div>
@@ -2640,7 +2640,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17260">
+                                <div id="seat" className="real no_review" pk="17260">
                                     <p>16</p>
                                 </div>
                             </div>
@@ -2697,7 +2697,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real lightgreen" pk="17266">
+                                <div id="seat" className="real no_review" pk="17266">
                                     <p>14</p>
                                 </div>
                             </div>
@@ -2707,7 +2707,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real red" pk="17267">
+                                <div id="seat" className="real no_review" pk="17267">
                                     <p>15</p>
                                 </div>
                             </div>
@@ -2784,7 +2784,7 @@ function Jayu() {
                             {/* 좌석표에 열 표시해주는 코드 */}
                             <div className="seats">
                                 {/* 일반 좌석 */}
-                                <div id="seat" className="real red" pk="17275">
+                                <div id="seat" className="real no_review" pk="17275">
                                     <p>16</p>
                                 </div>
                             </div>

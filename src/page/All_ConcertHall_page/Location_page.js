@@ -33,8 +33,8 @@ function Location() {
             },
             headers: {
               
-              "X-NCP-APIGW-API-KEY-ID": "ID",
-              "X-NCP-APIGW-API-KEY": "KEY",
+              "X-NCP-APIGW-API-KEY-ID": process.env.REACT_APP_NAVER_API_KEY_ID,
+              "X-NCP-APIGW-API-KEY": process.env.REACT_APP_NAVER_API_KEY,
             },
           }
         );

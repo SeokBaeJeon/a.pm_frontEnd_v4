@@ -15,7 +15,7 @@ const ActorDetail = () => {
   useEffect(() => {
     const fetchActorDetail = async () => {
       try {
-        const response = await axios.get(` http://localhost:8080/actor/${actorId}`);
+        const response = await axios.get(` https://apm-backend-a20e349efc23.herokuapp.com/actor/${actorId}`);
         setActor(response.data);
       } catch (error) {
         console.error('배우 상세 정보 불러오기 에러:', error);
@@ -24,7 +24,7 @@ const ActorDetail = () => {
 
     const fetchActorSchedule = async () => {
       try {
-        const response = await axios.get(` http://localhost:8080/schedule/actor/${actorId}`);
+        const response = await axios.get(` https://apm-backend-a20e349efc23.herokuapp.com/schedule/actor/${actorId}`);
         setSchedule(response.data);
       } catch (error) {
         console.error('배우 스케줄 불러오기 에러:', error);

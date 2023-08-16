@@ -34,7 +34,7 @@ function Jayu() {
         // 서버로부터 좌석 정보를 가져오는 함수
         const fetchSeats = async () => {
           try {
-            const response = await axios.get('http://localhost:8080/seat/list/101');
+            const response = await axios.get('https://apm-backend-a20e349efc23.herokuapp.com/seat/list/101');
             setSeats(response.data); // 서버에서 받아온 좌석 정보를 상태에 설정
             console.log(response.data);
           } catch (error) {
@@ -68,7 +68,7 @@ function Jayu() {
           };
           await 
     axios.post
-    (`http://localhost:8080/view/write/${selectedSeatId}`, {
+    (`https://apm-backend-a20e349efc23.herokuapp.com/view/write/${selectedSeatId}`, {
             seatScore: rating,
             comment,
             

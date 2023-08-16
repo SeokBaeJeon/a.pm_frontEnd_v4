@@ -28,7 +28,7 @@ function Signin(props) {
 
     try {
       // 서버로 로그인 정보를 전송하는 API 호출
-      const response = await fetch('http://localhost:8080/user/login', {
+      const response = await fetch('https://apm-backend-a20e349efc23.herokuapp.com/user/login', {
         method: 'POST',  // 요청 메서드를 POST로 지정
         headers: {
           'Content-Type': 'application/json',

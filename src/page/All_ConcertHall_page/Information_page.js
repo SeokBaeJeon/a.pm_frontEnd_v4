@@ -64,7 +64,9 @@ function Information() {
 
   return (
     <>
-      <h1 className="center">공연장 정보</h1>
+      <hr/>
+      <h1 className="center" style={{fontFamily:"Century Gothic,sans-serif"}}>Theater Information</h1>
+      <hr/>
       <div style={{ flex: 1 }}>
         {notice1ImgSrc && (
           <img src={notice1ImgSrc} style={{ width: "100%", height: "auto" }} />

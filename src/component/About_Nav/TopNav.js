@@ -21,16 +21,16 @@ function TopNav({ theaterId }) {
   return (
     <div className="Top-menu-container">
       <button onClick={navigateToNP} className="Top-menu-item">
-        진행중인 공연
+        진행중인 공연 정보
       </button>
       <button onClick={navigateToInfo} className="Top-menu-item">
         공연장 정보
       </button>
       <button onClick={navigateToLoca} className="Top-menu-item">
-        주소,화장실
+        위치 정보
       </button>
       <button onClick={navigateToSeeya} className="Top-menu-item">
-        시야
+        시야 정보
       </button>
     </div>
   );

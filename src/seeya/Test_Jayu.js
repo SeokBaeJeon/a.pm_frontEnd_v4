@@ -7,7 +7,7 @@ import Like from '../img/LikeLevel.png';
 import axios from 'axios';
 
 
-function Jayu() {
+function TestJayu() {
     const [seats, setSeats] = useState([]); // 좌석 정보를 담을 상태
     const [popupOpen, setPopupOpen] = useState(false);
     const [selectedSeatId, setSelectedSeatId] = useState(null);
@@ -83,7 +83,10 @@ function Jayu() {
       }; 
   
     return (
-    <>     
+    <>
+        <h1 className="center">대학로 자유극장</h1>
+       
+           
             <div className="rating-info">
                 <img src={Like} alt="nope" />
             </div>
@@ -5090,13 +5093,10 @@ function Jayu() {
                 </div>
                 
                 </div>
-              
                 </Container>
-                <br/>
-                <br/>
             {/* 층 끝 */}
         
     </>
     );
 }
-export default Jayu;
+export default TestJayu;

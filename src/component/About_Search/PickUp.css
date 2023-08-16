@@ -44,4 +44,9 @@
     text-decoration:center;
     line-height: 60px;
     white-space: normal;
+    cursor: pointer;
+}
+
+.Result_item:hover{
+    background-color: lightgray;
 }

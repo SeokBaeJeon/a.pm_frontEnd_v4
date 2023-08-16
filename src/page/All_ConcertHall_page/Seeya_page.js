@@ -8,7 +8,9 @@ import Jayu from "../../seeya/Jayu";
 function Seeya() {
   return (
     <>
-      <h1 className="center">시야 정보 좌석</h1>
+      <hr/>
+      <h1 className="center" style={{fontFamily:"Century Gothic,sans-serif"}}>Seat View Information</h1>
+      <hr/>
       <Jayu/>
     </>
   );

@@ -41,18 +41,20 @@ function NowPerformance() {
 
   return (
     <>
-      <h1 className="center">현재 진행중인 공연</h1>
-      <h2>{filteredPerformances.map((performance) => (
+      <hr/>
+      <h1 className="center" style={{fontFamily:"Century Gothic,sans-serif"}}>An OnGoing Performance</h1>
+      <hr/>
+      <h3>{filteredPerformances.map((performance) => (
           <div>{performance.title}
           </div>
-        ))}</h2>
+        ))}</h3>
       {/* 연결된 공연 정보 표시 */}
       <div>
         {filteredPerformances.map((performance) => (
           <div key={performance.pmShowId}>
             <img src={performance.poster} alt={performance.title} />
             {/* 추가적인 공연 정보 표시 */}
-            <h3>{performance.synopsis}</h3>
+            <h4>{performance.synopsis}</h4>
           </div>
         ))}
       </div>

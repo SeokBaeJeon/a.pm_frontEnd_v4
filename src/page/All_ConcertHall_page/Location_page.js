@@ -63,7 +63,9 @@ function Location() {
 
   return (
     <>
-      <h1 className="center">주소, 화장실 정보</h1>
+      <hr/>
+      <h1 className="center" style={{fontFamily:"Century Gothic,sans-serif"}}>Location Information</h1>
+      <hr/>
       {theaterLocation ? <Map location={theaterLocation} /> : <p>Loading...</p>}
     </>
   );

@@ -5,7 +5,6 @@ import TopNav from "../../component/About_Nav/TopNav";
 import { Outlet } from "react-router-dom";
 import axios from "axios";
 import ConcertHall_SearchBar from "../../component/About_Search/ConcertHall_SearchBar";
-
 const TheaterPage = () => {
   const { theaterId } = useParams();
   const [theaterInfo, setTheaterInfo] = useState(null);
@@ -49,8 +48,8 @@ const TheaterPage = () => {
       <div>
         {theaterInfo ? (
           <div>
-            <h1>{theaterInfo.theaterName}</h1>
-            <p>극장 위치: {theaterInfo.theaterLocation}</p>
+            <h1 className="center"style={{fontFamily:"Century Gothic,sans-serif"}}>{theaterInfo.theaterName}</h1>
+            <p className="center"style={{fontFamily:"Century Gothic,sans-serif"}}>{theaterInfo.theaterLocation}</p>
           </div>
         ) : (
           <p>극장 정보를 불러오는 중...</p>

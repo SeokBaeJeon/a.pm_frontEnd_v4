@@ -1,3 +1,4 @@
+/*
 .seat_all.seat-all {
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
@@ -18,7 +19,7 @@
   display: block;
 }
 
-/* 전체 층( 층+좌석) */
+/* 전체 층( 층+좌석) 
 .floor {
     border: 1px solid lightgrey;
   width: 850px;
@@ -30,7 +31,7 @@
   zoom: normal;
 }
 
-/* 좌석표에 층 명시 */
+/* 좌석표에 층 명시 
 .seating_table_container {
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
@@ -49,7 +50,7 @@
   align-items: center;
   margin: 20px 0;
 }
-/* 층 그 자체 */
+/* 층 그 자체 
 .seattable_floor {
   font-weight: bolder;
   box-sizing: border-box;
@@ -63,7 +64,7 @@
   color: black;
   font-weight: bolder;
 }
-/* 각층 좌석 표시  */
+/* 각층 좌석 표시  
 .floor_container {
   box-sizing: border-box;
   margin: 0;
@@ -82,11 +83,11 @@
   justify-content: flex-end;
 }
 
-/* 열 */
+/* 열 
 
-/* 좌석 */
+/* 좌석 
 /* seeyatheater
-좌석표에 열 표시해주는 코드  */
+좌석표에 열 표시해주는 코드  
 #row_zone {
   box-sizing: border-box;
   font-family: "Noto Sans KR", sans-serif;
@@ -100,16 +101,16 @@
   margin: 2.5px;
   min-width: 25px;
 }
-/* ex, A */
+/* ex, A 
 .seat_num {
   box-sizing: border-box;
   margin: 0;
   font-family: "Noto Sans KR", sans-serif;
 }
-/* 진짜 좌석표에 표시되는 구역 이름         */
-/* 열 */
-/* 좌석 */
-/* 좌석표에 열 표시해주는 코드     */
+/* 진짜 좌석표에 표시되는 구역 이름         
+/* 열 
+/* 좌석
+/* 좌석표에 열 표시해주는 코드     
 .seats {
   box-sizing: border-box;
   margin: 0;
@@ -137,11 +138,11 @@
 }
 
 #seat.real.disabled.selected {
-  /* disabled인데 선택된 상태의 스타일 */
-  background-color: #ffcc00; /* 예를 들어 노란색으로 변경 */
+  /* disabled인데 선택된 상태의 스타일 
+  background-color: #ffcc00; /* 예를 들어 노란색으로 변경 
 }
 
-/* 좋아요 버튼 스타일 */
+/* 좋아요 버튼 스타일 
 #popup .like-btn {
   background-color: lightgreen;
   border: none;
@@ -155,7 +156,7 @@
   color: white;
 }
 
-/* 좋아요 카운트 표시 스타일 */
+/* 좋아요 카운트 표시 스타일 
 #popup .rating p {
   margin-top: 10px;
 }
@@ -172,8 +173,8 @@
   margin: 2.5px;
   width: 25px;
 }
-/* 일반좌석 */
-/* pk="33013" 기본키 값 계속 변경 db관련 */
+/* 일반좌석 
+/* pk="33013" 기본키 값 계속 변경 db관련 
 #seat.real.no_review {
   cursor: pointer;
   box-sizing: border-box;
@@ -190,7 +191,7 @@
   width: 25px;
 }
 
-/* 좋아요에 따라 색상 변경*/
+/* 좋아요에 따라 색상 변경
 #seat.real.red {
   cursor: pointer;
   box-sizing: border-box;
@@ -267,3 +268,4 @@
   margin: 2.5px;
   width: 25px;
 }
+*/

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import '../../styles/Logo_Apm.css';
 
 function Header(){
   return <header>
     <Link to="/Main_page">
-      <h1 style={{margin: '1px',backgroundColor:'pink'}}> a p,m</h1>
+      <h1 className="Logo_Container"> A p m</h1>
     </Link>
     </header>
 }

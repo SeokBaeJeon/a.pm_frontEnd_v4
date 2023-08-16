@@ -3,7 +3,7 @@
     font-family: 'Noto Sans KR', sans-serif;
     width: max-content;
     overflow: auto;
-    margin: 0 auto;
+    margin: -100px auto;
     display: block;
     padding-top: 120px;
 }
@@ -164,6 +164,7 @@
     border-radius: 10%;
     margin: 2.5px;
     width: 25px;
+    background: whitesmoke;
 }
 /* 좌석 점수에 따라 div 색갈 바뀌게 동적 변경 className에 추가해야함 */
 

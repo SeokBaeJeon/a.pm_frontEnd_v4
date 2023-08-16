@@ -81,6 +81,7 @@ import PmShowDetail from "./component/PmShowDetail";
 //seeya 폴더
 import Jayu from "./seeya/Jayu";
 import Test from "./seeya/test";
+import TestJayu from "./seeya/Test_Jayu";
 
 //component - test
 import SeatMap from "./component/Seat_test"; 
@@ -94,6 +95,7 @@ root.render(
       <Route element={<FixedBottomNavigation />}>
         <Route path={"/C_H_Search"} element={
           <ConcertHall_SearchBar/>} />
+        <Route path={"/TestJayu"} element={<TestJayu/>}/>
         
         <Route path={"/seatmap"} element={<SeatMap/>}/>
         <Route path={"/jayu"} element={<Jayu/>}/>

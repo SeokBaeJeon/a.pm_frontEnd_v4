@@ -4,6 +4,20 @@ import "./PickUp.css";
 import { Link } from "react-router-dom";
 
 const SearchPage = () => {
+  const handleResultItemMouseEnter = (theaterId) => {
+    const resultItem = document.getElementById(`theater-${theaterId}`);
+    if (resultItem) {
+      resultItem.style.backgroundColor = "#f0f0f0"; // 변경할 배경 색상 설정
+    }
+  };
+
+  const handleResultItemMouseLeave = (theaterId) => {
+    const resultItem = document.getElementById(`theater-${theaterId}`);
+    if (resultItem) {
+      resultItem.style.backgroundColor = "transparent"; // 원래 배경 색상으로 복원
+    }
+  };
+  
   const [theaterList, setTheaterList] = useState([]);
   const [selectedInitial, setSelectedInitial] = useState("");
   const initialList = ["ㄱ", "ㄴ", "ㄷ", "ㄹ", "ㅁ", "ㅂ", "ㅅ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"];
@@ -74,6 +88,8 @@ const SearchPage = () => {
                   style={{ textDecoration: "none", color: "black" }}
                   to={`/theater/${encodeURIComponent(theater.theaterId)}`}
                   key={theater.theaterId}
+                  onMouseEnter={() => handleResultItemMouseEnter(theater.theaterId)} // 마우스 진입 시 이벤트 핸들러 추가
+                  onMouseLeave={handleResultItemMouseLeave} // 마우스 이탈 시 이벤트 핸들러 추가
                 >
                   <div className="Result_item">{theater.theaterName}</div>
                 </Link>
@@ -83,6 +99,8 @@ const SearchPage = () => {
                   style={{ textDecoration: "none", color: "black" }}
                   to={`/theater/${encodeURIComponent(theater.theaterId)}`}
                   key={theater.theaterId}
+                  onMouseEnter={() => handleResultItemMouseEnter(theater.theaterId)} // 마우스 진입 시 이벤트 핸들러 추가
+                  onMouseLeave={handleResultItemMouseLeave} // 마우스 이탈 시 이벤트 핸들러 추가
                 > 
                   <div className="Result_item">{theater.theaterName}</div>
                 </Link>

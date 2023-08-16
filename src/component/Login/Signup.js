@@ -30,7 +30,7 @@ function Signup(props) {
 
     try {
       // 서버로 회원가입 정보를 전송하는 API 호출
-      const response = await fetch('http://localhost:8080/user/signup', {
+      const response = await fetch('https://apm-backend-a20e349efc23.herokuapp.com/user/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json', // JSON 형식으로 데이터를 보내는 헤더 설정

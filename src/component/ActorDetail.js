@@ -15,7 +15,7 @@ const ActorDetail = () => {
   useEffect(() => {
     const fetchActorDetail = async () => {
       try {
-        const response = await axios.get(`https://apm-backend-a20e349efc23.herokuapp.com/actor/${actorId}`);
+        const response = await axios.get(` http://localhost:8080/actor/${actorId}`);
         setActor(response.data);
       } catch (error) {
         console.error('배우 상세 정보 불러오기 에러:', error);
@@ -24,7 +24,7 @@ const ActorDetail = () => {
 
     const fetchActorSchedule = async () => {
       try {
-        const response = await axios.get(`https://apm-backend-a20e349efc23.herokuapp.com/schedule/actor/${actorId}`);
+        const response = await axios.get(` http://localhost:8080/schedule/actor/${actorId}`);
         setSchedule(response.data);
       } catch (error) {
         console.error('배우 스케줄 불러오기 에러:', error);
@@ -45,7 +45,7 @@ const ActorDetail = () => {
 
     checkAuthentication();
   }, [actorId]);
-
+  
   const handleLikeClick = async (actorId) => {
     try {
       if (!tokenFromLocalStorage) {
@@ -60,9 +60,9 @@ const ActorDetail = () => {
           'Content-Type': 'application/json'
         }
       };
-  
+      
       // 서버에 좋아요 업데이트 요청 보내기
-      const response = await axios.post(`/user/likeActor/${actorId}`, null, config);
+      const response = await axios.post(`https://apm-backend-a20e349efc23.herokuapp.com/user/likeActor/${actorId}`, null, config);
       // 서버 응답 확인
       if (response.status === 200) {
         // 서버 응답이 성공한 경우, 해당 배우의 isLiked 값을 업데이트
@@ -96,7 +96,7 @@ const ActorDetail = () => {
       };
 
     
-      const response = await axios.delete(`/user/likeActor/${actorId}`, null, config);
+      const response = await axios.delete(`https://apm-backend-a20e349efc23.herokuapp.com/user/likeActor/${actorId}`, null, config);
       if (response.status === 200) {
         setActorList(prevActorList => {
           return prevActorList.map(actor => {
@@ -135,9 +135,9 @@ const ActorDetail = () => {
           {actor.actorName}
           <span style={heart}>
             {like ? (
-              <AiFillHeart onClick={handleCancelLikeClick} style={heartStyle} />
+              <AiFillHeart onClick={() => handleCancelLikeClick(actor.actorId)} style={heartStyle} />
             ) : (
-              <AiOutlineHeart onClick={handleLikeClick} style={heartStyle} />
+              <AiOutlineHeart onClick={() => handleLikeClick(actor.actorId)} style={heartStyle} />
             )}
           </span>
         </h2>
